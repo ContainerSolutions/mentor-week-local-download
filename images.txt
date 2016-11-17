@@ -1,0 +1,13 @@
+hello-world
+alpine
+seqvence/static-site
+ubuntu:12.04
+ubuntu
+alpine:latest
+microsoft/dotnet:1.0.0-preview2-sdk
+java:openjdk-8-jdk-alpine
+python:2.7-alpine
+node:5.11.0-slim
+# second training
+training/webapp
+training/postgres
