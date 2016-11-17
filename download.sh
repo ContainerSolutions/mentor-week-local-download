@@ -12,7 +12,7 @@ for image in $images; do
   docker pull $REPO/$image
   existing_images=$(docker images --format "{{.Repository}}:{{.Tag}}" | grep "^$image")
 
-  for existing_image in existing_images; do
+  for existing_image in $existing_images; do
     docker rmi $existing_image
   done
 
