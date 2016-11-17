@@ -7,7 +7,7 @@ echo "downloading images from $REPO"
 
 existing_images=$(docker images --format "{{.Repository}}:{{.Tag}}")
 
-for image in images; do
+for image in $images; do
   echo "Pulling image $image"
   docker pull $REPO/$image
   existing_images = $(docker images --format "{{.Repository}}:{{.Tag}}" | grep "^registry")
